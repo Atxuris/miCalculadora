@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <ul class="switch">
+            <li class="modoOscuro"><span class="material-symbols-outlined">
+                dark_mode
+            </span></li>
+            <li class="modoClaro"><span class="material-symbols-outlined">
+                light_mode
+            </span></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="texto1">
+                    <h1>Calculadora</h1><span> MVP </span>
+                </div>
+                <p>En este proyecto, he creado una calculadora básica con las funciones esenciales para realizar operaciones matemáticas diarias.</p> 
+                <p>En el futuro, me gustaría iterarla y  explorar la posibilidad de incorporar otras opciones. con fines de mi aprendizaje.</p>
+                <div class="lista">
+                    <p><strong>Actualmente esta calculadora puede:</strong></p>
+                    <ul>
+                        <li>Sumar</li>
+                        <li>Restar</li>
+                        <li>Multiplicar</li>
+                        <li>Dividir</li>
+                        <li>Resetear la calculadora (All clear)</li>
+                        <li>Borrar último dígito</li>
+                        <li>Agregar decimales</li>
+                        <li>Colocar Modo Oscuro</li>
+                    </ul>
+                </div>
+                <div class="iteracion">
+                    <p><strong>Próxima iteración:</strong> 
+                        <br>
+                        Agregar respuesta a comandos de teclado.
+                    </p>
+                </div>   
+            </div>
+            <div class="calculadora">
+                <input type="text" id="pantalla" readonly>
+                <br>
+                <hr>
+                <input type="button" value="AC" class="allClear" onclick="limpiar()">
+                <input type="button" value="÷" onclick="agregar('/')">
+                <br>
+                <input type="button" value="7" onclick="agregar('7')">
+                <input type="button" value="8" onclick="agregar('8')">
+                <input type="button" value="9" onclick="agregar('9')">
+                <input type="button" value="×" onclick="agregar('*')">
+                <br>
+                <input type="button" value="4" onclick="agregar('4')">
+                <input type="button" value="5" onclick="agregar('5')">
+                <input type="button" value="6" onclick="agregar('6')">
+                <input type="button" value="-" onclick="agregar('-')">
+                <br>
+                <input type="button" value="1" onclick="agregar('1')">
+                <input type="button" value="2" onclick="agregar('2')">
+                <input type="button" value="3" onclick="agregar('3')">
+                <input type="button" value="+" onclick="agregar('+')">
+                <br>
+                <input type="button" value="0" onclick="agregar('0')">
+                <input type="button" value="." onclick="agregar('.')">
+                <input type="button" value="" class="icon-button" onclick="borrar()">
+                <input type="button" value="=" id="calcular" onclick="calcular()">
+            </div>
+        </section>
+        <p>Atxuris Lobo 🤘🏼 - <strong>Fullstack Developer</strong></p>
+    </main>
+        
+<script src="./js/index.js"></script>
+    
+</body>
+</html>
