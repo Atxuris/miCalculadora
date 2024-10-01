@@ -94,9 +94,9 @@ ul{
     margin-top: 0.5rem;
 }
 hr{
-    width: 220px;
+    width: 90%;
     height: 1px;
-    background-color: #F5F5F5;
+    background-color: #af1515;
     border: none;
     margin: 2px 8px;
 }
@@ -252,7 +252,7 @@ body.active{
         height: 100vh;
     }
     hr{
-        width: 220px;
+        width: 90%;
         height: 1px;
         background-color: #374054;
         border: none;
@@ -304,6 +304,7 @@ body.active{
         position: relative;
         width: 100vw;
         height: 70px;
+        margin-bottom: 2rem;
     }
     section {
         flex-direction: column;
@@ -345,6 +346,7 @@ body.active{
 @media (max-width: 768px){
     header{
         width: 100%;
+        margin-bottom: 2rem;
     }
     section{
         width: 100%;
